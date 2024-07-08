@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+.Summersale{
+    height: 448px;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.Summersale>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Summersale>h1{
+    font-size: 72px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+.Summersale>p{
+    font-size: 16px;
+    color: white;
+    z-index: 2;
+}
+.Summersale>button{
+    width: 191px;
+    height: 56px;
+    padding: 16px 56px 16px 56px;
+    gap: 8px;
+    border-radius: 6px;
+    border: 1px solid white;
+    opacity: 0px;
+    background-color: inherit;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+
+
+    z-index: 2;
+}
