@@ -1,5 +1,6 @@
 import bgHero from './assets/banner.jpeg'
 import './Hero.css'
+import { Link } from 'react-router-dom';
 
 function Hero() {
 
@@ -8,7 +9,7 @@ function Hero() {
       <div className='hero' style={{backgroundImage:`url(${bgHero})`}}>
         <h1>IFYTHEL LIGHTS</h1>
         <p>Light Up Your Homes</p>
-        <button>Shop Now</button>
+        <button> <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/ProductListing">Shop Now</Link> </button>
         <div className="overlay"></div>
       </div>
     </>

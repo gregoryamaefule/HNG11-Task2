@@ -5,7 +5,9 @@ import profileLogo from './assets/profile.png'
 import hm from './assets/Burger.png'
 import './Header.css'
 
-function Header({onHC}) {
+import { Link } from 'react-router-dom';
+
+function Header() {
   const [menuOn, setMenuOn] = useState(0);
 
   const menuOnStyle = {
@@ -25,7 +27,7 @@ function Header({onHC}) {
         <h1>IFYTHEL LIGHTS</h1>
         <input type="search" name="search" id="search" placeholder='🔍   Search' />
         <ul className='text'>
-            <li className='active' onClick={() => onHC()}>Home</li>
+            <li className='active' > <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/">Home</Link> </li>
             <li>About</li>
             <li>Contact Us</li>
         </ul>

@@ -1,5 +1,6 @@
 import ssbanner from './assets/summersale.jpeg'
 import './Summersale.css'
+import { Link } from 'react-router-dom';
 
 function Summersale() {
 
@@ -8,7 +9,7 @@ function Summersale() {
       <div className="Summersale" style={{backgroundImage: `url(${ssbanner})`}}>
         <h1>Epic Summer Sale</h1>
         <p>Do Not Miss Out</p>
-        <button>Shop Now</button>
+        <button><Link style={{ textDecoration: 'none', color: 'inherit' }} to="/ProductListing">Shop Now</Link></button>
         <div></div>
       </div>
     </>

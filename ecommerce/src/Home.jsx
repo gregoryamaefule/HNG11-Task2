@@ -5,11 +5,11 @@ import Newin from './Newin.jsx'
 import SS from './Summersale.jsx'
 import Footer from './Footer.jsx'
 
-function Home({onHomeClick}) {
+function Home() {
 
   return (
     <>
-        <Header onHC={onHomeClick}/>
+        <Header />
         <Hero />
         <Category />
         <Newin />
