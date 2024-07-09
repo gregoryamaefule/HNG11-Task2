@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.ccon{
+    background-color: #FAFAFA;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    margin: 20px 0;
+}
+
+.boxitem{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.checkinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 82%;
+    padding: 20px;
+    background-color: #FAFAFA;
+}
+
+.sum{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.pay{
+    flex-basis: 50%;
+}
+
+.sumitem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sumitem>p>img{
+    width: 46px;
+    height: 46px;
+}
+.sumitem>p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 56%;
+
+}
+.summ{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pay{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    padding: 40px;
+    padding-top: 0;
+}
+
+.pay>h3{
+    flex-basis: 100%;
+}
+.pay>p{
+    flex-basis: 100%;
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #D1D1D8;
+    border-radius: 11px;
+    align-items: center;
+}
+
+.pay>button{
+    flex-basis: 48%;
+    padding: 24px, 86px, 24px, 86px ; 
+    border-radius: 6px;
+    background-color: inherit;
+    height: 46px;
+}
+
+
+@media (max-width:800px){
+    .checkinfo{
+        flex-direction: column;
+        gap: 100px;
+        width: 96%;
+    }
+    .pay{
+        padding: 4px;
+    }
+    .pay>button{
+        flex-basis: 44%;
+    }
+}

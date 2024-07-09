@@ -1,4 +1,3 @@
-import bgHero from './assets/banner.jpeg'
 import './CT.css'
 import { Link } from 'react-router-dom';
 import lmc from './assets/lmc.jpeg'

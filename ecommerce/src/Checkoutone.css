@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.ccon{
+    background-color: #FAFAFA;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    margin: 20px 0;
+}
+
+.boxitem{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.checkinfo1{
+    width: 86%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.addr{
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 7px;
+    position: relative;
+}
+.area{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.addr>span{
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    gap: 10px;
+}
+.buttons{
+    align-self: flex-end;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons>button{
+    width: 130px;
+    height: 32px;
+    background-color: inherit;
+    color: black;
+    border-radius: 6px;
+    border: 0.5px solid black;
+}
+
+@media (max-width: 800px){
+    .ccon, .box, .checkinfo1{
+        width: 100%;
+    }
+    .com{
+        flex-basis: 65%;
+    }
+}
