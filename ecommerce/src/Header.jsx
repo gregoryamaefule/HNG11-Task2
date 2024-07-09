@@ -33,7 +33,7 @@ function Header() {
         </ul>
         <ul className="icon">
             <li><img src={loveLogo} alt="" /></li>
-            <li><img src={cartLogo} alt="" /></li>
+            <li><Link style={{ textDecoration: 'none', color: 'inherit' }} to="/Cart"><img src={cartLogo} alt="" /></Link></li>
             <li><img src={profileLogo} alt="" /></li>
         </ul>
         <div className="hm" onClick={handleHmClick}>
@@ -44,13 +44,13 @@ function Header() {
             X
           </span>
           <ul className='mtext'>
-              <li className='active'>Home</li>
+              <li className='active'><Link style={{ textDecoration: 'none', color: 'inherit' }} to="/">Home</Link></li>
               <li>About</li>
               <li>Contact Us</li>
           </ul>
           <ul className="micon">
               <li><img src={loveLogo} alt="" /></li>
-              <li><img src={cartLogo} alt="" /></li>
+              <li><Link style={{ textDecoration: 'none', color: 'inherit' }} to="/Cart"><img src={cartLogo} alt="" /></Link></li>
               <li><img src={profileLogo} alt="" /></li>
           </ul>
         </div>
